@@ -7,10 +7,6 @@ import AddExpensePage from '../components/AddExpensePage';
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
 import Header from '../components/Header'; 
 
-
-
-
-
 const AppRouter  = () =>{
     return(
         <BrowserRouter>
