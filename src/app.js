@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route,Switch} from 'react-router-dom';
 import './styles/styles.scss';
 
 const ExpenseDashboardPage = () => {
@@ -36,14 +36,23 @@ const HelpPage = () => {
     )
 }
 
+const NotFoundPage = () => {
+    return(
+        <div>
+            404! not found 
+        </div>
+    )
+}
+
 const routes = (
     <BrowserRouter>
-        <div>
+        <Switch>
             <Route path="/" component={ExpenseDashboardPage} exact={true}/>
             <Route path="/create" component={AddExpensePage} />
             <Route path="/edit" component={EditExpensePage} />
             <Route path="/help" component={HelpPage} />
-        </div>
+            <Route component={NotFoundPage} />
+        </Switch>
         
     
     </BrowserRouter>
