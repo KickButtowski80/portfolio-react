@@ -5,7 +5,7 @@ import NotFoundPage from '../components/NotFoundPage';
 import EditExpensePage from '../components/EditExpensePage';
 import AddExpensePage from '../components/AddExpensePage';
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
-import ExpenseDashboardPage from '../components/Header'; 
+import Header from '../components/Header'; 
 
 
 
