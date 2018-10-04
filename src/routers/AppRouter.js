@@ -5,22 +5,11 @@ import NotFoundPage from '../components/NotFoundPage';
 import EditExpensePage from '../components/EditExpensePage';
 import AddExpensePage from '../components/AddExpensePage';
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
- 
+import ExpenseDashboardPage from '../components/Header'; 
 
 
 
 
-const Header = () => {
-    return(
-        <header>
-            <h1>Expensify</h1>
-            <NavLink to="/" activeClassName="is-active" exact={true}>Dashboard </NavLink>
-            <NavLink to="/create" activeClassName="is-active">Create Expense</NavLink>
-            <NavLink to="/edit" activeClassName="is-active">Edit Expense</NavLink>
-            <NavLink to="/help" activeClassName="is-active">Help</NavLink>
-        </header>
-    )
-}
 
 const AppRouter  = () =>{
     return(
