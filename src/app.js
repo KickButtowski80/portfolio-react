@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
-import {BrowserRouter, Route,Switch} from 'react-router-dom';
+import {BrowserRouter, Route,Switch, Link} from 'react-router-dom';
 import './styles/styles.scss';
 
 const ExpenseDashboardPage = () => {
@@ -39,7 +39,7 @@ const HelpPage = () => {
 const NotFoundPage = () => {
     return(
         <div>
-            404! not found - <a href="/">Go Back To Home</a>
+            404! not found - <Link to="/">Go Back To Home</Link>
         </div>
     )
 }
