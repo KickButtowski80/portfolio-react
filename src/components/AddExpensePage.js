@@ -3,7 +3,7 @@ import React from 'react'
 const AddExpensePage = () => {
     return(
         <div>
-           This is from my add exchangePage component 
+          <h1>This is from my add exchangePage component </h1> 
         </div>
     )
 }
